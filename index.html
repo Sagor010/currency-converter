@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>currency converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="https://www.bb.org.bd/econdata/exchangerate.php"><img src="Taka.jpg" alt="" class="money-img" /></a>
+    
+    <h1>currency converter</h1>
+
+    <p>Choose the currency and the amounts to get the exchange rate</p>
+    
+
+    <div class="currency">
+        <input type="number" name="first" onclick="firstToSecond()" oninput="firstToSecond()" id="firstCurrency" />
+
+        <select name="currency" id="inputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+
+        <option value="BDT">Bangladeshi taka</option>  
+        <option value="USD" >United States dollar</option>
+        <option value="GBP">British pound</option>
+        <option value="INR">Indian rupee</option>
+        <option value="AED">United Arab Emirates dirham</option>
+        </select>
+      </div> 
+      
+      <div class="currency">
+        <input type="number" name="second" id="secondCurrency" />
+
+        <select name="currency" id="outputCurrency" onchange="firstToSecond()"onclick="firstToSecond()" oninput="firstToSecond()">
+          
+        <option value="BDT1" >Bangladeshi taka</option>
+        <option value="USD1">United States dollar</option>
+        <option value="GBP1">British pound</option>
+        <option value="INR1">Indian rupee</option>
+        <option value="AED1">United Arab Emirates dirham</option>
+        </select>
+      </div> 
+
+     <h2>
+       <span style="color: #2F4F4F">Cerated By Sagor mollick</span>
+     </h2>
+
+     <script  src="script.js"></script>
+
+  </body>
+</html>
